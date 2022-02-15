@@ -6,6 +6,11 @@ RUN git clone https://github.com/BrooklynLee/docker_test.git
 
 WORKDIR /home/docker_test
 
+RUN apt-get update
+RUN apt-get install -y tdsodbc unixodbc-dev
+RUN apt install unixodbc-bin -y
+RUN apt-get clean -y
+
 # # Install pipenv and compilation dependencies
 # RUN pip install pipenv
 # RUN apt-get update && apt-get install -y --no-install-recommends gcc
