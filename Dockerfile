@@ -20,7 +20,7 @@ RUN pip install gunicorn
 # RUN pipenv install --system --deploy
 
 RUN python manage.py migrate
-RUN python manage.py collectstatic --noinput
+# RUN python manage.py collectstatic --noinput
 
 EXPOSE 8000
 
