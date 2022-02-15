@@ -124,6 +124,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+print(BASE_DIR)
+print(STATIC_ROOT)
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
