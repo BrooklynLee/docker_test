@@ -21,7 +21,6 @@ RUN pip install gunicorn
 
 RUN python manage.py migrate
 RUN python manage.py collectstatic --noinput
-# echo yes | python manage.py collectstatic
 
 EXPOSE 8000
 
