@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "testing12345"
+RUN echo "testing..."
 
 RUN git clone https://github.com/BrooklynLee/docker_test.git
 
@@ -29,7 +29,7 @@ RUN echo "DATABASE_USER = brooklyn" > .env
 RUN echo "DATABASE_PASSWORD = gabia4370!@" > .env
 
 
-RUN python manage.py migrate
+# RUN python manage.py migrate
 # RUN python manage.py collectstatic --noinput
 
 EXPOSE 8000

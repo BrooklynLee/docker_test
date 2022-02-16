@@ -21,13 +21,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 DATABASE_HOSTNAME = env('DATABASE_HOSTNAME')
 DATABASE_USER = env('DATABASE_USER')
 DATABASE_PASSWORD =  env('DATABASE_PASSWORD')
