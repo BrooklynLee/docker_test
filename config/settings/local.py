@@ -22,6 +22,24 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+DATABASE_HOSTNAME = env('DATABASE_HOSTNAME')
+DATABASE_USER = env('DATABASE_USER')
+DATABASE_PASSWORD =  env('DATABASE_PASSWORD')
+DRIVER = 'ODBC Driver 17 for SQL Server'
+
+DATE_INPUT_FORMATS = '%Y-%m-%d'
+
+
+# Database
+# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
