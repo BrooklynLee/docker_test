@@ -28,28 +28,3 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-# DATABASE_HOSTNAME = '54.92.96.35'
-# DATABASE_USER = 'brooklyn'
-# DATABASE_PASSWORD = 'gabia4370!@'
-# DRIVER = 'ODBC Driver 17 for SQL Server'
-
-# DATE_INPUT_FORMATS = '%Y-%m-%d'
-
-
-# # Database
-# # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'NAME': 'UP_INFO_BOARD_DEV',
-#         'ENGINE': 'mssql',
-#         'HOST': DATABASE_HOSTNAME,
-#         'USER': DATABASE_USER,
-#         'PASSWORD': DATABASE_PASSWORD,
-#         'PORT': 3306,
-#         'OPTIONS': {
-#             'isolation_level': 'READ UNCOMMITTED'
-#         },
-#     }
-# }
