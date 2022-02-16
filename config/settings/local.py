@@ -12,7 +12,7 @@ env = environ.Env(
 
 # Take environment variables from .env file
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
-
+# environ.Env.read_env('.env')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
@@ -29,12 +29,6 @@ ALLOWED_HOSTS = ['*']
 #     }
 # }
 
-DATABASE_HOSTNAME = env('DATABASE_HOSTNAME')
-DATABASE_USER = env('DATABASE_USER')
-DATABASE_PASSWORD =  env('DATABASE_PASSWORD')
-DRIVER = 'ODBC Driver 17 for SQL Server'
-
-DATE_INPUT_FORMATS = '%Y-%m-%d'
 
 
 # Database
